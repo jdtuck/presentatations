@@ -14,7 +14,7 @@
   <meta name="generator" content="quarto-1.4.549">
 
   <meta name="author" content="J. Derek Tucker">
-  <meta name="dcterms.date" content="2024-02-13">
+  <meta name="dcterms.date" content="2024-02-18">
   <title>Bayesian Model Calibration</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -350,7 +350,7 @@ J. Derek Tucker <a href="https://orcid.org/0000-0001-8844-2169" class="quarto-ti
     </div>
 </div>
 
-  <p class="date">February 13, 2024</p>
+  <p class="date">February 18, 2024</p>
 </section>
 <section id="sandia-national-laboratories" class="slide level2">
 <h2>Sandia National Laboratories</h2>
@@ -415,7 +415,7 @@ J. Derek Tucker <a href="https://orcid.org/0000-0001-8844-2169" class="quarto-ti
 <h2>FDA versus Multivariate Statistics</h2>
 <p>&nbsp;In FDA, one develops the <span class="alert">theory</span> on function spaces and not finite vectors, and discretizes the function only at the final step – compute implementation</p>
 <center>
-<img data-src="figs/ulf.png">
+<img data-src="figs/ulf.png" height="250">
 </center>
 <p>&nbsp;Ulf Grenander: “<span class="alert">Discretize as late as possible</span>” (1924-2016)</p>
 <p>&nbsp;Even after discretization, we retain the ability to interpolate resample as needed!</p>
@@ -449,6 +449,7 @@ J. Derek Tucker <a href="https://orcid.org/0000-0001-8844-2169" class="quarto-ti
 </section>
 <section id="functional-data-analysis" class="slide level2">
 <h2>Functional Data Analysis</h2>
+<div style="font-size: 90%;">
 <ul>
 <li>Let <span class="math inline">\(f\)</span> be a real valued-function with the domain <span class="math inline">\([0,1]\)</span>, can be extended to any domain
 <ul>
@@ -459,11 +460,14 @@ J. Derek Tucker <a href="https://orcid.org/0000-0001-8844-2169" class="quarto-ti
 <li>It is common to use the following objective function for alignment <span class="math display">\[\min_{\gamma\in\Gamma}\|f_1\circ\gamma-f_2\|\]</span></li>
 <li>Note: It is <span class="alert">not a distance</span> function since it is not symmetric.</li>
 </ul>
+</div>
 </section>
 <section id="elastic-distance-fisher-rao" class="slide level2">
 <h2>Elastic Distance (Fisher-Rao)</h2>
+<div style="font-size: 90%;">
 <p>Define the Square Root Velocity Function <span class="math display">\[q:[0,1]\rightarrow\mathbb{R}^1,~q(t)=sign(\dot{f}(t))\sqrt{|\dot{f}(t)|}\]</span> Fisher Rao Distance is <span class="math inline">\(\mathbb{L}^2\)</span> in SRVF space <span class="math display">\[d_a(f_1,f_2) = \inf_\gamma\|(q_1\circ\gamma)\sqrt{\dot{\gamma}}-q_2\|\]</span> Distance is a <span class="alert">proper distance</span></p>
 <p>Can compute distance on warping functions (how much alignment) <span class="math display">\[d_p(\gamma) = \arccos\left(\int_0^1\sqrt{\dot{\gamma}}\,dt\right)\]</span></p>
+</div>
 </section>
 <section id="analysis-of-gamma" class="slide level2">
 <h2>Analysis of <span class="math inline">\(\Gamma\)</span></h2>
@@ -737,7 +741,7 @@ J. Derek Tucker <a href="https://orcid.org/0000-0001-8844-2169" class="quarto-ti
 <p>D. Francom,&nbsp;J. D. Tucker, J. G. Huerta, K. Shuler, and D. Ries, “Elastic Bayesian Model Calibration”,&nbsp;arXiv:2305.08834&nbsp;[stat.ME], in revision, 2023.&nbsp;</p>
 <p>J. Brown, J. P. Davis,&nbsp;J. D. Tucker, J. G. Huerta, and K. Shuler, “Quantifying uncertainty in analysis of shockless dynamic compression experiments on platinum, Part 2: Bayesian model calibration”,&nbsp;Journal of Applied Physics, vol.&nbsp;134, no. 23, 2023.</p>
 </section>
-<section id="section" class="slide level2" data-background="#43464B">
+<section id="section" class="slide level2 center" data-background="#43464B">
 <h2></h2>
 <center>
 <p><font size="48">Questions?</font></p>
@@ -1119,7 +1123,7 @@ J. Derek Tucker <a href="https://orcid.org/0000-0001-8844-2169" class="quarto-ti
       }
     });
     </script>
-    <script>var lightboxQuarto = GLightbox({"openEffect":"zoom","descPosition":"bottom","closeEffect":"zoom","selector":".lightbox","loop":false});
+    <script>var lightboxQuarto = GLightbox({"openEffect":"zoom","loop":false,"closeEffect":"zoom","selector":".lightbox","descPosition":"bottom"});
     window.onload = () => {
       lightboxQuarto.on('slide_before_load', (data) => {
         const { slideIndex, slideNode, slideConfig, player, trigger } = data;

@@ -61,7 +61,7 @@ date: last-modified
 
  In FDA, one develops the [theory]{.alert} on function spaces and not finite vectors, and discretizes the function only at the final step – compute implementation
 
-<center>![](figs/ulf.png)</center>
+<center>![](figs/ulf.png){height="250"}</center>
 
  Ulf Grenander: “[Discretize as late as possible]{.alert}” (1924-2016)
 
@@ -81,20 +81,23 @@ date: last-modified
 
 ![](figs/elastic_fda.png){fig-align="center" height="80%"}
 
-## Functional Data Analysis
+## Functional Data Analysis 
 
+::: {style="font-size: 90%;"}
 -   Let $f$ be a real valued-function with the domain $[0,1]$, can be extended to any domain
     -   Only functions that are absolutely continuous on $[0,1]$
 -   Let $\Gamma$ be the group of all warping functions $$ \Gamma = \{\gamma:[0,1]\rightarrow[0,1]|\gamma(0)=0,\gamma(1)=1,~\gamma \mbox{ is a diffeo}\} $$
 -   It acts on the function space by composition $$(f,\gamma) = f\circ\gamma$$
 -   It is common to use the following objective function for alignment $$\min_{\gamma\in\Gamma}\|f_1\circ\gamma-f_2\|$$
 -   Note: It is [not a distance]{.alert} function since it is not symmetric.
+:::
 
 ## Elastic Distance (Fisher-Rao)
-
+::: {style="font-size: 90%;"}
 Define the Square Root Velocity Function $$q:[0,1]\rightarrow\mathbb{R}^1,~q(t)=sign(\dot{f}(t))\sqrt{|\dot{f}(t)|}$$ Fisher Rao Distance is $\mathbb{L}^2$ in SRVF space $$d_a(f_1,f_2) = \inf_\gamma\|(q_1\circ\gamma)\sqrt{\dot{\gamma}}-q_2\|$$ Distance is a [proper distance]{.alert}
 
 Can compute distance on warping functions (how much alignment) $$d_p(\gamma) = \arccos\left(\int_0^1\sqrt{\dot{\gamma}}\,dt\right)$$
+:::
 
 ## Analysis of $\Gamma$
 
@@ -347,7 +350,7 @@ D. Francom, J. D. Tucker, J. G. Huerta, K. Shuler, and D. Ries, “Elastic Baye
 
 J. Brown, J. P. Davis, J. D. Tucker, J. G. Huerta, and K. Shuler, “Quantifying uncertainty in analysis of shockless dynamic compression experiments on platinum, Part 2: Bayesian model calibration”, Journal of Applied Physics, vol. 134, no. 23, 2023.
 
-##  {background="#43464B"}
+##  {background="#43464B" .center}
 
 <center>
 
