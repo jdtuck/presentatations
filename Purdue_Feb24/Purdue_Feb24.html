@@ -14,7 +14,7 @@
   <meta name="generator" content="quarto-1.4.549">
 
   <meta name="author" content="J. Derek Tucker">
-  <meta name="dcterms.date" content="2024-02-18">
+  <meta name="dcterms.date" content="2024-02-24">
   <title>Bayesian Model Calibration</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -350,7 +350,7 @@ J. Derek Tucker <a href="https://orcid.org/0000-0001-8844-2169" class="quarto-ti
     </div>
 </div>
 
-  <p class="date">February 18, 2024</p>
+  <p class="date">February 24, 2024</p>
 </section>
 <section id="sandia-national-laboratories" class="slide level2">
 <h2>Sandia National Laboratories</h2>
@@ -502,7 +502,7 @@ J. Derek Tucker <a href="https://orcid.org/0000-0001-8844-2169" class="quarto-ti
 <h2>Bayesian Model Calibration</h2>
 <ul>
 <li><p>Let <span class="math inline">\(z(t,\boldsymbol{x_i})\)</span> denote an experimental measurement from the <span class="math inline">\(i^{th}\)</span> experiment</p></li>
-<li><p>Similaryl, let <span class="math inline">\(y(t,\boldsymbol{x_i}, \boldsymbol{u})\)</span> denote a simulation of the <span class="math inline">\(i^{th}\)</span> experiment with input parameters <span class="math inline">\(\boldsymbol{u}\)</span></p></li>
+<li><p>Similarly, let <span class="math inline">\(y(t,\boldsymbol{x_i}, \boldsymbol{u})\)</span> denote a simulation of the <span class="math inline">\(i^{th}\)</span> experiment with input parameters <span class="math inline">\(\boldsymbol{u}\)</span></p></li>
 <li><p>An approach to Bayesian model calibration with functional responses is to specify <span class="math display">\[z(t,\boldsymbol{x_i}) = y(t,\boldsymbol{x_i},\boldsymbol{\theta}) + \delta(t, \boldsymbol{x_i}) + \epsilon_i(t,\boldsymbol{x_i}), ~~\epsilon(t,\boldsymbol{x_i})\sim \mathcal{N}(0,\sigma_\epsilon^2)\]</span></p></li>
 <li><p>Where <span class="math inline">\(\delta\)</span> is a model discrepancy term and <span class="math inline">\(\epsilon\)</span> represents all other error</p></li>
 <li><p>This model will suffer from the aforementioned problems with phase variability</p></li>
@@ -1123,7 +1123,7 @@ J. Derek Tucker <a href="https://orcid.org/0000-0001-8844-2169" class="quarto-ti
       }
     });
     </script>
-    <script>var lightboxQuarto = GLightbox({"openEffect":"zoom","loop":false,"closeEffect":"zoom","selector":".lightbox","descPosition":"bottom"});
+    <script>var lightboxQuarto = GLightbox({"descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox","closeEffect":"zoom"});
     window.onload = () => {
       lightboxQuarto.on('slide_before_load', (data) => {
         const { slideIndex, slideNode, slideConfig, player, trigger } = data;
